@@ -29,7 +29,7 @@ Este cambio resistivo se convierte en un **voltaje variable** mediante un **divi
 
 - Se conecta el FSR en serie con una resistencia de 10kΩ.
 - El nodo común va al pin analógico A0.
-- Se forma así un **divisor resistivo**, que entrega un voltaje proporcional a la presión aplicada.
+- Se forma así un **divisor de voltaje resistivo**, que entrega un voltaje proporcional a la presión aplicada.
 
 ---
 
