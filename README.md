@@ -1,62 +1,82 @@
-# fundbio-sensores
+# 🧬 Fundamentos de Biodiseño – Sensores con Arduino
 
-Este repositorio contiene ejemplos de código para el curso **Fundamentos de Biodiseño**, orientados al uso de sensores con Arduino en aplicaciones biomédicas.
-
-## 📦 Contenido del repositorio
-
-El repositorio está organizado en los siguientes directorios:
-
-### 1. **`basic-examples/`**  
-Ejemplos básicos para la lectura y procesamiento de sensores:
-- **EMG**: Ejemplo básico de lectura de un sensor EMG de Grove.
-- **FSR**: Ejemplo básico de lectura de un sensor de presión FSR.
-- **Flex**: Lectura de ángulo a partir de un sensor Flex.
-- **IMU**: Lectura de datos sin procesar de un sensor IMU (MPU6050).
-
-### 2. **`tiny-projects/`**  
-Proyectos pequeños que integran uno o más sensores para realizar tareas específicas:
-- **Fall Detection**: Detección de caídas utilizando un sensor IMU (MPU6050).
-- **EMG Gesture Control**: Control de un LED o dispositivo basado en gestos detectados por el sensor EMG.
-- **Flex Glove**: Uso de un sensor Flex para controlar un dispositivo o realizar mediciones de flexión de los dedos.
-- **FSR Pressure Alert**: Alerta basada en umbral de presión usando un sensor FSR.
-
-### 3. **`documentation/`**  
-Documentación adicional para los proyectos y sensores:
-- **sensors-reference.md**: Información técnica y enlaces a hojas de datos de los sensores EMG, FSR, Flex e IMU.
-- **installation.md**: Instrucciones para instalar las bibliotecas necesarias y configurar el entorno de desarrollo de Arduino.
-- **class-outline.md**: Resumen del contenido y objetivos del curso **Fundamentos de Biodiseño**.
+Este repositorio contiene ejemplos de código, documentación técnica y proyectos básicos desarrollados en el curso **Fundamentos de Biodiseño**, orientados al uso de sensores electrónicos aplicados al diseño de dispositivos biomédicos.
 
 ---
 
-## 🧠 Metodología del taller
+## 📦 Contenido del repositorio
 
-El taller está basado en metodologías activas de aprendizaje:
+El repositorio se organiza en tres bloques principales:
 
-- **Aprendizaje Basado en Proyectos (PBL)**
-- **Design Thinking**
-- **Prototipado electrónico iterativo**
+### 1. `basic-examples/`
+Ejemplos introductorios para la lectura y visualización de datos de sensores biomédicos con Arduino:
 
-Se promueve el trabajo colaborativo, la exploración creativa, el análisis de problemas reales y la validación funcional de prototipos.
+- **EMG**: Lectura básica de señales musculares usando el sensor MyoWare.
+- **FSR**: Medición de presión con sensor resistivo FSR.
+- **Flex**: Interpretación del ángulo de flexión con sensor flexible resistivo.
+- **IMU (MPU6050)**: Lectura de aceleración y rotación cruda vía I2C.
 
+### 2. `tiny-projects/`
+Proyectos de baja complejidad enfocados en la resolución de problemas biomédicos concretos mediante prototipos funcionales:
 
-## 🛠️ Requisitos
+- **Fall Detection**: Detección de caídas utilizando datos de aceleración del MPU6050.
+- **EMG Gesture Control**: Activación de un LED u otro actuador mediante contracción muscular.
+- **Flex Glove**: Control de dispositivo o feedback visual a partir de la flexión del dedo.
+- **FSR Pressure Alert**: Alarma de presión que supera un umbral predefinido.
 
-- **Arduino UNO** o compatible
+### 3. `documentation/`
+Documentos de apoyo, referencias técnicas y lineamientos del curso:
+
+- `sensors-reference.md`: Información técnica y enlaces a hojas de datos de EMG, FSR, Flex e IMU.
+- `installation.md`: Instrucciones de instalación de bibliotecas y configuración del entorno Arduino.
+- `class-outline.md`: Estructura, objetivos y metodología del curso **Fundamentos de Biodiseño**.
+
+---
+
+## 🎓 Metodología del curso
+
+El curso adopta un enfoque basado en el **aprendizaje activo**, integrando:
+
+- ✅ **Aprendizaje Basado en Proyectos (PBL)**
+- ✅ **Design Thinking**
+- ✅ **Prototipado electrónico iterativo**
+
+Los estudiantes desarrollan competencias en exploración creativa, resolución técnica de problemas reales del entorno clínico, y validación de conceptos mediante dispositivos funcionales.
+
+---
+
+## 🛠️ Requisitos técnicos
+
+### Hardware
+- Arduino UNO o placa compatible
 - Sensores:
-  - **MyoWare - EMG Sensor**
-  - **FSR Sensor**
+  - EMG Sensor – **MyoWare**
+  - **FSR** – Force Sensitive Resistor
   - **Flex Sensor**
-  - **MPU6050 IMU Sensor**
-- **Bibliotecas necesarias**:
-  - `MPU6050.h` ([Instalar desde el Library Manager](https://github.com/jrowberg/i2cdevlib))
-  - `Wire.h` (Incluida por defecto en el IDE de Arduino)
-  - Cualquier otra biblioteca específica mencionada en cada ejemplo.
+  - **MPU6050** – Acelerómetro y giroscopio (IMU)
+
+### Software
+- **Arduino IDE** (1.8.x o 2.x)
+- Bibliotecas requeridas:
+  - [`MPU6050.h`](https://github.com/jrowberg/i2cdevlib) – para comunicación I2C
+  - `Wire.h` – incluida por defecto en el IDE
+  - Otras especificadas en cada ejemplo
+
+---
 
 ## 🚀 Instalación
 
-1. Clona el repositorio en tu máquina local:
-   ```bash
-   git clone https://github.com/devRenzo/fundbio-sensores.git
+1. Clona el repositorio en tu entorno de trabajo local:
+
+```bash
+git clone https://github.com/devRenzo/fundbio-sensores.git
+```
+   
+2. Abre los archivos .ino con Arduino IDE.
+
+3. Conecta tu placa Arduino y carga el código.
+
+4. Consulta la documentación incluida para el esquema de conexión y notas técnicas.
 
 ## 📜 Licencia
 
