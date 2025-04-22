@@ -36,7 +36,7 @@ Un **Flex Sensor** es un sensor resistivo que **cambia su resistencia al ser dob
 
 ## 💻 Código del ejemplo
 
-Consulta el archivo: `flex-basic-read.ino`
+Consulta el archivo: `FLEX_basic_read.ino`
 
 Este programa:
 - Lee el valor del pin analógico A0 donde está conectado el Flex Sensor.
