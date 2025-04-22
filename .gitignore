@@ -1,0 +1,44 @@
+# Archivos generados por el IDE de Arduino
+*.elf
+*.hex
+*.eep
+*.bin
+*.d
+*.o
+*.a
+*.s
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de respaldo comunes
+*.bak
+*.tmp
+*.swp
+*~
+
+# Carpeta de build (si usas Arduino CLI)
+build/
+
+# Archivos de configuración del IDE de Arduino
+*.pro
+*.user
+*.depend
+*.kdev4
+
+# Configuración de VSCode + PlatformIO (opcional, si no estás usándolos)
+.vscode/
+.pio/
+
+# Archivos de log o debug
+*.log
+
+# Bibliotecas descargadas localmente (si las tienes dentro del repo)
+libraries/
+
+# Carpeta oculta de Arduino CLI (si usas)
+.arduino/
+
+# Carpetas del sistema de Mac/Linux
+__MACOSX/
