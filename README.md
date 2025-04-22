@@ -28,6 +28,17 @@ Documentación adicional para los proyectos y sensores:
 
 ---
 
+## 🧠 Metodología del taller
+
+El taller está basado en metodologías activas de aprendizaje:
+
+- **Aprendizaje Basado en Proyectos (PBL)**
+- **Design Thinking**
+- **Prototipado electrónico iterativo**
+
+Se promueve el trabajo colaborativo, la exploración creativa, el análisis de problemas reales y la validación funcional de prototipos.
+
+
 ## 🛠️ Requisitos
 
 - **Arduino UNO** o compatible
@@ -46,3 +57,18 @@ Documentación adicional para los proyectos y sensores:
 1. Clona el repositorio en tu máquina local:
    ```bash
    git clone https://github.com/devRenzo/fundbio-sensores.git
+
+## 📜 Licencia
+
+Este repositorio está licenciado bajo **MIT License**.  
+Puede ser reutilizado, adaptado y compartido libremente para fines educativos, citando la fuente original.
+
+---
+
+
+## 👤 Autor
+
+**[RENZO CHAN RIOS]**  
+Docente del curso *Fundamentos de Biodiseño*  
+FACULTAD DE CIENCIAS E INGENIERÍA – [UPCH]  
+[renzo.chan@upch.pe]
