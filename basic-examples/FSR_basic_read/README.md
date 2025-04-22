@@ -35,7 +35,7 @@ Este cambio resistivo se convierte en un **voltaje variable** mediante un **divi
 
 ## 💻 Código del ejemplo
 
-Consulta el archivo: `fsr-basic-read.ino`
+Consulta el archivo: `FSR_basic_read.ino`
 
 Este programa:
 - Lee el valor del pin analógico A0.
