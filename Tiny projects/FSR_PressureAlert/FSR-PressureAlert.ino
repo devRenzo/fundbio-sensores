@@ -1,37 +1,48 @@
 /*
  ============================================================================
- Título      : Alerta de presión con sensor FSR
- Descripción : Este programa activa una alerta (LED o buzzer) si se detecta 
-               una presión mayor a un umbral determinado, usando un sensor FSR.
+ Título      : Alerta de presión FSR con filtro de ventana móvil
+ Descripción : Enciende un LED cuando se aplica presión mayor a un umbral.
+               La señal del sensor FSR se filtra con media móvil de 10 datos.
  ----------------------------------------------------------------------------
  Docente     : Renzo Chan Ríos / Lewis De La Cruz
  Curso       : Fundamentos de Biodiseño
  Universidad : Universidad Peruana Cayetano Heredia (UPCH)
  Año         : 2025
- Versión     : 0.1
+ Versión     : 0.3
  ============================================================================
 */
 
-const int fsrPin = A0;      // Pin conectado al sensor FSR
-const int ledPin = 13;      // LED o buzzer conectado
-const int threshold = 600;  // Umbral de presión
+const int fsrPin = A0;
+const int ledPin = 13;
+const int threshold = 600;
+
+// Filtro de ventana móvil para estabilizar la señal
+const int windowSize = 10;
+int readings[windowSize];
+int index = 0;
+long total = 0;
+
+int readMovingAverage(int pin) {
+  total -= readings[index];
+  readings[index] = analogRead(pin);
+  total += readings[index];
+  index = (index + 1) % windowSize;
+  return total / windowSize;
+}
+
 
 void setup() {
   pinMode(ledPin, OUTPUT);
   Serial.begin(9600);
+  for (int i = 0; i < windowSize; i++) {
+    readings[i] = 0;
+  }
 }
 
 void loop() {
-  int fsrValue = analogRead(fsrPin);
-
-  Serial.print("FSR: ");
+  int fsrValue = readMovingAverage(fsrPin);
+  Serial.print("FSR filtrado: ");
   Serial.println(fsrValue);
-
-  if (fsrValue > threshold) {
-    digitalWrite(ledPin, HIGH);  // Presión excede el umbral
-  } else {
-    digitalWrite(ledPin, LOW);   // Presión normal
-  }
-
+  digitalWrite(ledPin, fsrValue > threshold ? HIGH : LOW);
   delay(50);
 }
