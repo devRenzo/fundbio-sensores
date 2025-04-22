@@ -43,7 +43,7 @@ Se promueve el trabajo colaborativo, la exploración creativa, el análisis de p
 
 - **Arduino UNO** o compatible
 - Sensores:
-  - **Grove - EMG Sensor**
+  - **MyoWare - EMG Sensor**
   - **FSR Sensor**
   - **Flex Sensor**
   - **MPU6050 IMU Sensor**
