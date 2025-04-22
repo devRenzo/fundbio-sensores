@@ -1,6 +1,6 @@
 # 🧪 Tiny Projects – Fundamentos de Biodiseño
 
-Este directorio contiene una colección de **proyectos funcionales y básicos** desarrollados por estudiantes del curso *Fundamentos de Biodiseño*. Cada proyecto utiliza uno de los sensores biomédicos vistos en clase y aplica principios de prototipado rápido y diseño centrado en el usuario.
+Este directorio contiene una colección de **proyectos funcionales y básicos** desarrollados para estudiantes del curso *Fundamentos de Biodiseño*. Cada proyecto utiliza uno de los sensores biomédicos vistos en clase y aplica principios de prototipado rápido y diseño centrado en el usuario.
 
 Los proyectos permiten reforzar el uso de sensores, lectura de señales fisiológicas y control de actuadores mediante microcontroladores (Arduino UNO).
 
