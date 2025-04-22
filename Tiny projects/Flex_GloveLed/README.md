@@ -1,5 +1,9 @@
 # ✋ Flex Glove Dual – Versión Educativa con Filtro Promedio
 
+<p align="center">
+  <img src="image.png" alt="Flex Glove Mini Project" width="400">
+</p>
+
 Este proyecto permite leer dos sensores **Flex** colocados en los dedos y controlar la **intensidad de dos LEDs** (verde y rojo) proporcionalmente al ángulo de flexión. Se aplica un **filtro por promedio simple** para suavizar la señal, con comentarios detallados para estudiantes que están iniciando en programación y electrónica biomédica.
 
 ---
