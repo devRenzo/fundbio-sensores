@@ -2,11 +2,25 @@
 
 Este ejemplo permite leer la señal eléctrica generada por un **sensor EMG MyoWare**, que detecta la actividad muscular superficial. Utilizando un Arduino UNO, se captura la señal analógica y se visualiza en tiempo real mediante el monitor serial.
 
+<p align="center">
+  <img src="image.png" alt="MyoWare EMG Sensor" width="400"><br>
+  <em>Figura 1. Imagen referencial.</em>
+</p>
+
 ---
 
 ## 🧪 ¿Qué es un sensor EMG?
 
 El sensor **EMG (Electromiografía)** MyoWare mide la actividad eléctrica generada por los músculos esqueléticos cuando se contraen. Esta señal bioeléctrica es amplificada, filtrada y entregada como una señal analógica que puede ser leída por un microcontrolador.
+
+---
+
+## 🔧 Esquema de conexión
+
+<p align="center">
+  <img src="schematic.png" alt="Esquema de conexión de un MyoWare con Arduino" width="500"><br>
+  <em>Figura 2. Esquema de conexión eléctrica del ejemplo</em>
+</p>
 
 ---
 
