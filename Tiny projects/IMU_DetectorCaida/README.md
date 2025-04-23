@@ -2,6 +2,11 @@
 
 Este ejemplo demuestra cómo utilizar un **sensor inercial MPU6050** para detectar caídas basadas en picos de aceleración seguidos de estados de quietud. El sistema se implementa con una placa Arduino UNO y puede visualizarse en tiempo real mediante el **Serial Plotter** del IDE de Arduino.
 
+<p align="center">
+  <img src="image.png" alt="Detector de Caídas IMU MPU6050" width="400"><br>
+  <em>Figura 1. Imagen referencial generada con IA</em>
+</p>
+
 ---
 
 ## 🧪 ¿Qué es un sensor IMU?
