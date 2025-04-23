@@ -1,48 +1,58 @@
 /*
  ============================================================================
- Título      : Alerta de presión FSR con filtro de ventana móvil
- Descripción : Enciende un LED cuando se aplica presión mayor a un umbral.
-               La señal del sensor FSR se filtra con media móvil de 10 datos.
+ Título      : Alerta de presión con doble sensor FSR
+ Descripción : Este programa utiliza dos sensores FSR para detectar si se ha
+               ejercido presión por encima de un umbral en cualquiera de ellos.
+               Si se detecta presión alta, se enciende un LED de alerta.
  ----------------------------------------------------------------------------
  Docente     : Renzo Chan Ríos / Lewis De La Cruz
  Curso       : Fundamentos de Biodiseño
  Universidad : Universidad Peruana Cayetano Heredia (UPCH)
  Año         : 2025
- Versión     : 0.3
+ Versión     : 0.4
  ============================================================================
 */
 
-const int fsrPin = A0;
-const int ledPin = 13;
-const int threshold = 600;
+const int fsr1Pin = A0;       // Primer sensor FSR
+const int fsr2Pin = A1;       // Segundo sensor FSR
+const int ledPin = 9;         // LED de alerta
+const int umbral = 600;       // Valor de presión a partir del cual se activa la alerta
 
-// Filtro de ventana móvil para estabilizar la señal
-const int windowSize = 10;
-int readings[windowSize];
-int index = 0;
-long total = 0;
+const int muestras = 10;      // Número de lecturas para promedio
 
-int readMovingAverage(int pin) {
-  total -= readings[index];
-  readings[index] = analogRead(pin);
-  total += readings[index];
-  index = (index + 1) % windowSize;
-  return total / windowSize;
+// Función para calcular promedio simple
+int leerPromedio(int pin) {
+  long suma = 0;
+  for (int i = 0; i < muestras; i++) {
+    suma += analogRead(pin);
+    delayMicroseconds(10);  // Estabiliza lectura ADC
+  }
+  return suma / muestras;
 }
-
 
 void setup() {
   pinMode(ledPin, OUTPUT);
   Serial.begin(9600);
-  for (int i = 0; i < windowSize; i++) {
-    readings[i] = 0;
-  }
 }
 
 void loop() {
-  int fsrValue = readMovingAverage(fsrPin);
-  Serial.print("FSR filtrado: ");
-  Serial.println(fsrValue);
-  digitalWrite(ledPin, fsrValue > threshold ? HIGH : LOW);
-  delay(50);
+  int valorFSR1 = leerPromedio(fsr1Pin);
+  int valorFSR2 = leerPromedio(fsr2Pin);
+
+  // Enciende LED si uno de los sensores supera el umbral
+  if (valorFSR1 > umbral || valorFSR2 > umbral) {
+    digitalWrite(ledPin, HIGH);
+  } else {
+    digitalWrite(ledPin, LOW);
+  }
+
+  // Imprimir valores en monitor serial
+  Serial.print("FSR1: ");
+  Serial.print(valorFSR1);
+  Serial.print("   FSR2: ");
+  Serial.print(valorFSR2);
+  Serial.print("   Estado: ");
+  Serial.println((valorFSR1 > umbral || valorFSR2 > umbral) ? "ALTA PRESIÓN" : "NORMAL");
+
+  delay(100);
 }
