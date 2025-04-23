@@ -79,6 +79,7 @@ Usa el **Serial Plotter** del IDE de Arduino a **57600 baudios** para observar l
 
 A continuación se presentan algunos videos recomendados para reforzar los conceptos abordados:
 
+- 📄 [Tutorial MPU6050: Acelerómetro y Giroscopio – Naylamp Mechatronics](https://naylampmechatronics.com/blog/45_tutorial-mpu6050-acelerometro-y-giroscopio.html)
 - 📺 [How does an Accelerometer work? | 3D Animation (Inglés)](https://www.youtube.com/watch?v=KuekQ-m9xpw)
 - 📺 [How Gyroscope Sensor Works ? | 3D Animated (Inglés)](https://www.youtube.com/watch?v=REVp33SwwHE)
 
