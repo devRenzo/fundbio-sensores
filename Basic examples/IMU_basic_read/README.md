@@ -58,6 +58,11 @@ El archivo `mpu6050-lectura-basica.ino` contiene:
 
 > 📌 Nota: Verifica si el pin SDA/SCL cambia según tu placa (Ej: ESP32, Leonardo).
 
+<p align="center">
+  <img src="schematic.png" alt="Esquema de conexión del MPU6050 con Arduino" width="500"><br>
+  <em>Figura 2. Esquema de conexión eléctrica del ejemplo</em>
+</p>
+
 ---
 
 ## 📈 Visualización
