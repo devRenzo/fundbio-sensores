@@ -61,6 +61,16 @@ Este programa:
 
 ---
 
+## 🎥 Material Complementario
+
+A continuación se presentan algunos videos recomendados para reforzar los conceptos abordados sobre EMG, activación muscular y control neuromuscular:
+
+- 📺 [MyoWare Muscle Sensor - Electromyography & Robot Arm (Inglés)](https://www.youtube.com/watch?v=wMVL3d2dN9U)
+
+Estos materiales visuales complementan la comprensión del origen fisiológico de la señal EMG y su aplicación en sistemas biomédicos.
+
+---
+
 ## 🧑‍🏫 Créditos
 
 Este ejemplo fue desarrollado para el curso **Fundamentos de Biodiseño**  
