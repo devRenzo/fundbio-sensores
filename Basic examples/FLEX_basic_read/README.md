@@ -64,6 +64,14 @@ Este programa:
 
 ---
 
+## 🎥 Material Complementario
+
+A continuación se presentan algunos videos recomendados para reforzar los conceptos abordados:
+
+- 📺 [Flex sensor or Bend sensor with Arduino (Inglés)](https://youtu.be/C2y6ZiENtDU?si=Z6ZbcjnWhUJuePuq)
+
+---
+
 ## 🧑‍🏫 Créditos
 
 Este ejemplo fue desarrollado para el curso **Fundamentos de Biodiseño**  
