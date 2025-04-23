@@ -15,15 +15,6 @@ El sensor **EMG (Electromiografía)** MyoWare mide la actividad eléctrica gener
 
 ---
 
-## 🔧 Esquema de conexión
-
-<p align="center">
-  <img src="schematic.png" alt="Esquema de conexión de un MyoWare con Arduino" width="500"><br>
-  <em>Figura 2. Esquema de conexión eléctrica del ejemplo</em>
-</p>
-
----
-
 ## 🔬 Principio de funcionamiento
 
 - Los músculos generan **potenciales de acción** durante la contracción, que pueden detectarse con electrodos de superficie.
@@ -34,8 +25,6 @@ El sensor **EMG (Electromiografía)** MyoWare mide la actividad eléctrica gener
 
 ## 🔧 Esquema de conexión
 
-## ⚙️ Conexiones básicas
-
 | Sensor EMG (MyoWare) | Arduino UNO |
 |----------------------|-------------|
 | V+                   | 5V          |
@@ -44,6 +33,12 @@ El sensor **EMG (Electromiografía)** MyoWare mide la actividad eléctrica gener
 
 - Se debe conectar el cable de señal (SIG) al pin **A0** del Arduino.
 - Los electrodos deben colocarse sobre el músculo deseado (ej. bíceps, antebrazo), con uno de referencia en una zona neutra como el codo o muñeca.
+
+<p align="center">
+  <img src="schematic.png" alt="Esquema de conexión de un MyoWare con Arduino" width="500"><br>
+  <em>Figura 2. Esquema de conexión eléctrica del ejemplo</em>
+</p>
+
 ---
 
 ## 💻 Código del ejemplo
