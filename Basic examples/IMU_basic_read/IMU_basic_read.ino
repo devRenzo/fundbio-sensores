@@ -15,7 +15,6 @@
 */
 
 // Librerías para comunicación I2C y control del MPU6050
-#include "I2Cdev.h"
 #include "MPU6050.h"
 #include "Wire.h"
 
