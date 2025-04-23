@@ -63,6 +63,14 @@ Este programa:
 
 ---
 
+## 🎥 Material Complementario
+
+A continuación se presentan algunos videos recomendados para reforzar los conceptos abordados:
+
+- 📺 [How to use Force Sensitive Resistors (FSR) with Arduino (Inglés)](https://www.youtube.com/watch?v=eW3SQCi0aTE)
+
+---
+
 ## 🧑‍🏫 Créditos
 
 Este ejemplo fue desarrollado para el curso **Fundamentos de Biodiseño**  
