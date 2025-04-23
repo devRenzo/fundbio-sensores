@@ -1,6 +1,11 @@
 # 🔴 FSR Pressure Alert – Alerta de Presión con Doble Sensor FSR
 
-Este proyecto demuestra cómo usar **dos sensores de fuerza resistivos (FSR)** con Arduino para activar una **alerta visual** (LED) si cualquiera de ellos detecta una presión superior a un umbral. Este enfoque es útil para monitorear **distribución de peso bilateral** o zonas críticas en contacto con el cuerpo.
+Este mini proyecto utiliza dos sensores FSR conectados a una placa Arduino para monitorear la presión ejercida en dos puntos. Si la presión en cualquiera de los sensores supera un umbral definido, se activa un LED como alerta visual. 
+
+<p align="center">
+  <img src="image.png" alt="Montaje del proyecto FSR Pressure Alert" width="400"><br>
+  <em>Figura 1. Imagen Referencial generada con IA</em>
+</p>
 
 ---
 
