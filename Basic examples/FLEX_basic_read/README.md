@@ -17,15 +17,17 @@ Un **Flex Sensor** es un sensor resistivo que **cambia su resistencia al ser dob
 - Al doblarse, la resistencia puede aumentar a más de 70kΩ.  
 - Este cambio de resistencia se traduce en un voltaje variable mediante un **divisor de voltaje**, y puede leerse con un pin analógico del Arduino.
 
+---
+
 ## 🔧 Esquema de conexión
 
-```plaintext
- +5V -----> Flex Sensor --------+----------> A0 (Arduino)
-                                |
-                              10kΩ
-                                |
-                              GND
-```
+<p align="center">
+  <img src="schematic.png" alt="Esquema de conexión para doble FSR con Arduino" width="500"><br>
+  <em>Figura 2. Esquema de conexión eléctrica del proyecto con dos sensores FSR</em>
+</p>
+
+---
+
 ## 🔄 Explicación
 
 - El Flex Sensor se conecta en serie con una resistencia de 10kΩ.
