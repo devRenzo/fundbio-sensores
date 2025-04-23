@@ -20,12 +20,14 @@ El sensor **EMG (Electromiografía)** MyoWare mide la actividad eléctrica gener
 
 ## 🔧 Esquema de conexión
 
-```plaintext
-[EMG Sensor MyoWare]
-   SIG  ------> A0 (Arduino)
-   VCC  ------> 5V
-   GND  ------> GND
-```
+## ⚙️ Conexiones básicas
+
+| Sensor EMG (MyoWare) | Arduino UNO |
+|----------------------|-------------|
+| V+                   | 5V          |
+| GND                  | GND         |
+| SIG (out)            | A0          |
+
 - Se debe conectar el cable de señal (SIG) al pin **A0** del Arduino.
 - Los electrodos deben colocarse sobre el músculo deseado (ej. bíceps, antebrazo), con uno de referencia en una zona neutra como el codo o muñeca.
 ---
@@ -65,6 +67,7 @@ Este programa:
 
 A continuación se presentan algunos videos recomendados para reforzar los conceptos abordados sobre EMG, activación muscular y control neuromuscular:
 
+- 📄 [Guía de Introducción a EMG – PLUX BioSignals (PDF)](https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide1_EMG.pdf)
 - 📺 [MyoWare Muscle Sensor - Electromyography & Robot Arm (Inglés)](https://www.youtube.com/watch?v=wMVL3d2dN9U)
 
 Estos materiales visuales complementan la comprensión del origen fisiológico de la señal EMG y su aplicación en sistemas biomédicos.
