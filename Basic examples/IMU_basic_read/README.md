@@ -42,8 +42,7 @@ El archivo `mpu6050-lectura-basica.ino` contiene:
 - Arduino UNO, Nano o compatible
 - Librerías necesarias:
   - [`Wire.h`](https://www.arduino.cc/en/Reference/Wire) (ya viene por defecto)
-  - [`I2Cdev.h`](https://github.com/jrowberg/i2cdevlib)
-  - [`MPU6050.h`](https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050)
+  - En el gestor de Bibliotecas escribir: MPU ELECTRONIC CATS
 
 ---
 
