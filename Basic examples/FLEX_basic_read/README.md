@@ -22,8 +22,8 @@ Un **Flex Sensor** es un sensor resistivo que **cambia su resistencia al ser dob
 ## 🔧 Esquema de conexión
 
 <p align="center">
-  <img src="schematic.png" alt="Esquema de conexión para doble FSR con Arduino" width="500"><br>
-  <em>Figura 2. Esquema de conexión eléctrica del proyecto con dos sensores FSR</em>
+  <img src="schematic.png" alt="Esquema de conexión de un FSR con Arduino" width="500"><br>
+  <em>Figura 2. Esquema de conexión eléctrica del ejemplo</em>
 </p>
 
 ---

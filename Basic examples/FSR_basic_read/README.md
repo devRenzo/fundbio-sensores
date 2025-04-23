@@ -16,15 +16,17 @@ El FSR se basa en el **efecto piezorresistivo**:
 
 Este cambio resistivo se convierte en un **voltaje variable** mediante un **divisor de voltaje**, que es leído por el pin analógico del microcontrolador.
 
+---
+
 ## 🔧 Esquema de conexión
 
-```plaintext
- +5V -----> FSR --------+----------> A0 (Arduino)
-                        |
-                      10kΩ
-                        |
-                      GND
-```
+<p align="center">
+  <img src="schematic.png" alt="Esquema de conexión para doble FSR con Arduino" width="500"><br>
+  <em>Figura 2. Esquema de conexión eléctrica</em>
+</p>
+
+---
+
 ## 🔄 Explicación
 
 - Se conecta el FSR en serie con una resistencia de 10kΩ.
